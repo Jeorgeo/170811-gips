@@ -804,7 +804,8 @@ img {
 }
 
 .main-description__calculator input,
-.main-description__calculator button {
+.main-description__calculator button,
+.main-link__description a {
   width: 100%;
   max-width: 440px;
   margin-bottom: 0.8em;
@@ -816,7 +817,8 @@ img {
   background-color: #ffffff;
 }
 
-.main-description__calculator button {
+.main-description__calculator button,
+.main-link__description a {
   font-size: 1.2em;
   font-weight: bold;
   font-style: normal;
@@ -826,7 +828,8 @@ img {
   border: none;
 }
 
-.main-description__calculator button:hover {
+.main-description__calculator button:hover,
+.main-link__description a:hover {
   cursor: pointer;
   color: #404040;
   background-color: #e79476;
@@ -843,8 +846,118 @@ img {
   font-size: 0.9em;
 }
 
+.main-link {
+  position: relative;
+  z-index: 999;
+  margin: 0;
+  padding: 1em 0;
+  background: url('../img/bg_stone.jpg') 100% 100% no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 5px 3px #666666;
+}
 
+.main-link__title {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.main-link__description h5 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.main-link__description a {
+  display: block;
+  margin-top: 1.2em;
+  text-align: center;
+  border: 1px solid #f6490b;
+}
+
+.main-footer {
+  padding: 1em 0;
+  background: url('../img/bg_contacts.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.contacts {
+  position: relative;
+  z-index: 99;
+  width: 90%;
+  max-width: 860px;
+  margin: 2em auto 7em auto;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e79476;
+  text-shadow: 1px 1px #d64a19;
+}
+
+.contats__work {
+  width: 100%;
+  padding: 0 0.5em;
+  color: #ffffff;
+}
+
+.contats__work span {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.contats__work a {
+  margin: 0.4em 0;
+  color: #e79476;
+}
+
+.contats__work a:hover {
+  border-bottom: 1px dotted #e79476;
+}
+
+.contats__link {
+  display: block;
+  width: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d64a19;
+  border: 1px solid #d64a19;
+}
+
+.contats__link:hover {
+  color: #404040;
+  background-color: #e79476;
+}
+
+.contats__map {
+  position: absolute;
+  bottom: -116px;
+  left: 1.1em;
+  right: 1.1em;
+  z-index: 998;
+  height: 140px;
+  background: #fafafa url('../img/bg_map.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.contats__map iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 
