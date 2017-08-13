@@ -240,15 +240,13 @@
                 <label for="height">
                   <input id="height" type="text" name="height" placeholder="Длина стены в метрах">
                 </label>
-                <label for="area">
-                  <input id="area" class="area" type="text" name="area" value="" readonly>
-                </label>
-                <label for="price">
-                  <input id="price" class="price" type="text" name="price" value="" readonly>
-                </label>
-                <button type="button" name="button">Расчитать</button>
+                <label id="label-area" class="input-title" for="area">Площадь, м2:</label>
+                <input id="area" class="area" type="text" name="area" value="" readonly>
+                <label id="label-price" class="input-title" for="price">Стоимость, рублей:</label>
+                <input id="price" class="price" type="text" name="price" value="" readonly>
+                <button id="calculate" type="button" name="button">Расчитать</button>
                 <label for="mail">
-                  <input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail">
+                  <input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required>
                 </label>
                 <button id="order" type="submit" name="button">Отправить результат вам на почту</button>
               </form>
@@ -308,6 +306,6 @@
     <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="slick/slick_min.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
