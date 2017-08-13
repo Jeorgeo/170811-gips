@@ -233,20 +233,25 @@
             <div class="main-description__calculator">
               <h6>Рассчитайте</h6>
               <p>стоимость своего заказа</p>
-              <form action="mail.php">
+              <form id="js_form">
+                <!-- Hidden Required Fields -->
+            		<input type="hidden" name="project_name" value="Гипсовыепанели.com">
+            		<input type="hidden" name="admin_email" value="jeorgeo@list.ru">
+            		<input type="hidden" name="form_subject" value="Рассчет площади и стоимости">
+            		<!-- END Hidden Required Fields -->
                 <label for="width">
-                  <input id="width" type="text" name="width" placeholder="Длина стены в метрах">
+                  <input id="width" type="text" name="Длина" placeholder="Длина стены в метрах">
                 </label>
                 <label for="height">
-                  <input id="height" type="text" name="height" placeholder="Длина стены в метрах">
+                  <input id="height" type="text" name="Высота" placeholder="Высота стены в метрах">
                 </label>
                 <label id="label-area" class="input-title" for="area">Площадь, м2:</label>
-                <input id="area" class="area" type="text" name="area" value="" readonly>
+                <input id="area" class="area" type="text" name="Площадь" value="" readonly>
                 <label id="label-price" class="input-title" for="price">Стоимость, рублей:</label>
-                <input id="price" class="price" type="text" name="price" value="" readonly>
+                <input id="price" class="price" type="text" name="Стоимость" value="" readonly>
                 <button id="calculate" type="button" name="button">Расчитать</button>
                 <label for="mail">
-                  <input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required>
+                  <input id="mail" class="mail" type="text" name="e_mail" placeholder="Ваш e-mail" required value="">
                 </label>
                 <button id="order" type="submit" name="button">Отправить результат вам на почту</button>
               </form>

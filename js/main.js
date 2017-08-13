@@ -9,7 +9,7 @@ var btnCalculate = document.getElementById('calculate');
 var btnSubmit = document.getElementById('order');
 var separator = ',';
 var newDot = '.';
-var PRICE = 380 * 0.25;
+var PRICE = 380 / 0.25;
 
 btnCalculate.addEventListener('click', calculateArea);
 
@@ -42,8 +42,6 @@ if (isNaN(newArea)) {
   inputPrice.value = newPrice;
 }
 
-
-
   inputArea.classList.add('show-block');
   inputPrice.classList.add('show-block');
   inputMail.classList.add('show-block');
@@ -52,3 +50,24 @@ if (isNaN(newArea)) {
   btnCalculate.classList.add('show-block');
   btnSubmit.classList.add('show-block');
 }
+
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("#js_form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
