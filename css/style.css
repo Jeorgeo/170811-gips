@@ -241,6 +241,12 @@ img {
   }
 }
 
+@media (min-width: 1024px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
@@ -285,6 +291,8 @@ img {
 }
 
 .top-header__social {
+  position: relative;
+  z-index: 999;
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -345,6 +353,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 20;
   width: 100%;
 }
 
@@ -497,11 +506,64 @@ img {
 
 /*============== for tablets 1024px ===========================*/
 @media screen and (min-width: 1024px) {
+  .top-header {
+    min-height: 95px;
+  }
 
+  .top-header__social {
+    margin-top: 1.5em;
+  }
+
+
+  .top-header__phone span,
+  .top-header__mesanger span {
+    top: 10%;
+    width: 70px;
+    height: 70%;
+  }
+
+  .top-header__phone a,
+  .top-header__mesanger a {
+    font-size: 1em;
+    font-weight: bold;
+  }
 }
 
 /*=================== for PC 1280px ===========================*/
 @media screen and (min-width: 1280px) {
+  .top-header {
+    min-height: 90px;
+    padding: 1.5em 0 1px 0;
+    box-sizing: border-box;
+  }
+
+  .top-header__social {
+    margin-top: 1px;
+  }
+
+
+  .header-contacts {
+    width: 40%;
+  }
+
+  .top-header__phone,
+  .top-header__mesanger {
+    width: 50%;
+    float: left;
+  }
+
+  .top-header__phone a,
+  .top-header__mesanger a,
+  .top-header__phone p,
+  .top-header__mesanger p {
+    margin-left: 65px;
+  }
+
+  .slider__title {
+    float: left;
+    width: 50%;
+    max-width: 560px;
+  }
 
 }
 
@@ -899,6 +961,239 @@ img {
   border: 1px solid #f6490b;
 }
 
+/*============== for tablets 768px ===========================*/
+
+@media screen and (min-width: 768px) {
+  .border-art_top,
+  .border-art_bottom {
+    height: 3em;
+  }
+
+  .main-advantages__title {
+    width: calc(100% - 4em);
+    margin: 0 2em;
+    padding: 0.5em 1em 1.5em 1em;
+  }
+
+  .main-advantages__advantage {
+    min-height: 425px;
+    margin: 0 2em;
+    padding: 60px 10% 1em 10%;
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3);
+  }
+
+  .main-advantages__advantage p {
+    margin: 0.8em 0;
+  }
+
+  .main-catalog__title {
+    margin: 0 auto 1em auto;
+    padding-bottom: 1.5em;
+  }
+
+  .main-catalog .container {
+    padding: 0.3em;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .main-catalog__categories {
+    margin-left: 2em;
+  }
+
+  .main-catalog__download {
+    float: left;
+    width: 100%;
+    margin: 1em auto;
+    color: #ffffff;
+  }
+
+  .main-catalog__download p {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .main-description .box_right {
+    padding-right: 1em;
+  }
+
+  .main-description .box_left {
+    padding-left: 1em;
+  }
+
+  .main-description__characteristics,
+  .main-description__calculator {
+    min-height: 265px;
+  }
+
+  .main-description__characteristics {
+    padding-top: 2em;
+  }
+
+  .main-link__title {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .main-link__description {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  .main-link__description a {
+    position: absolute;
+    bottom: 0;
+    max-width: 330px;
+    margin-bottom: 0;
+  }
+
+  .main-link__description p {
+    padding-right: 2em;
+  }
+}
+
+/*============== for tablets 1024px ===========================*/
+@media screen and (min-width: 1024px) {
+  .main-advantages__advantage {
+    min-height: 350px;
+    margin: 0 1em;
+  }
+
+  .main-advantages__title {
+    width: calc(100% - 1.8em);
+    margin: 0 0.9em;
+  }
+
+  .main-advantages__title p {
+    margin: 2em;
+  }
+
+  .main-advantages__advantage h4 {
+    font-size: 1.3em;
+  }
+
+  .main-advantages__advantage p {
+    font-size: 1.05em;
+  }
+
+  .border-art_top,
+  .border-art_bottom {
+    height: 4em;
+  }
+
+  .main-catalog {
+    background-size: 25%;
+  }
+
+  .main-catalog__title h3 {
+    margin: 0.5em 0;
+  }
+
+  .main-catalog__categories li {
+    max-width: 290px;
+  }
+
+  .main-link__description .col-8 {
+    padding-left: 2em;
+  }
+
+  .title_right, .title_left {
+    width: 50%;
+  }
+}
+
+/*=================== for PC 1280px ===========================*/
+@media screen and (min-width: 1280px) {
+  .main-advantages__title {
+    width: calc(100% - 4em);
+    margin: 0 2em;
+    font-size: 1.3em;
+  }
+
+  .main-advantages__advantage {
+    margin: 0 2.2em;
+  }
+
+  .main-catalog__title {
+    padding: 1em;
+    font-size: 1.9em;
+  }
+
+  .main-catalog__categories {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 4em;
+  }
+
+  .main-catalog__categories li {
+    max-width: 300px;
+  }
+
+  .main-catalog__card {
+    margin: 2em auto 0 auto;
+  }
+
+  .main-catalog__download p {
+    display: block;
+    width: 60%;
+  }
+
+  .main-description h4 {
+    margin: 2em 0;
+  }
+
+  .main-description__calculator input,
+  .main-description__calculator button {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+
+  .main-description__calculator button {
+    width: 99.5%;
+    max-width: 480px;
+  }
+}
+
+/*=================== for PC 1360px ===========================*/
+@media screen and (min-width: 1360px) {
+  .main-catalog__title h3 {
+    margin: 1em 0;
+  }
+
+  .main-description {
+    background-size: inherit;
+  }
+}
+
+/*=================== for MAC 1600px ===========================*/
+@media screen and (min-width: 1600px) {
+  .main-catalog {
+    background-size: 20%;
+  }
+
+  .main-catalog__title {
+    padding: 1.2em;
+    font-size: 2.2em;
+  }
+
+  .main-link__description h5 {
+    font-size: 1.5em;
+  }
+
+  .main-link__description p {
+    font-size: 1.2em;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
 .main-footer {
   padding: 1em 0;
   background: url('../img/bg_contacts.jpg') 50% 50% no-repeat;
@@ -983,85 +1278,7 @@ img {
 }
 
 /*============== for tablets 768px ===========================*/
-
 @media screen and (min-width: 768px) {
-  .border-art_top,
-  .border-art_bottom {
-    height: 3em;
-  }
-
-  .main-advantages__title {
-    width: calc(100% - 4em);
-    margin: 0 2em;
-    padding: 0.5em 1em 1.5em 1em;
-  }
-
-  .main-advantages__advantage {
-    min-height: 425px;
-    margin: 0 2em;
-    padding: 60px 10% 1em 10%;
-    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3);
-  }
-
-  .main-advantages__advantage p {
-    margin: 0.8em 0;
-  }
-
-  .main-catalog__title {
-    margin: 0 auto 1em auto;
-    padding-bottom: 1.5em;
-  }
-
-  .main-catalog .container {
-    padding: 0.3em;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .main-catalog__categories {
-    margin-left: 2em;
-  }
-
-  .main-description .box_right {
-    padding-right: 1em;
-  }
-
-  .main-description .box_left {
-    padding-left: 1em;
-  }
-
-  .main-description__characteristics,
-  .main-description__calculator {
-    min-height: 265px;
-  }
-
-  .main-description__characteristics {
-    padding-top: 2em;
-  }
-
-  .main-link__title {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .main-link__description {
-    position: relative;
-    margin-bottom: 1em;
-  }
-
-  .main-link__description a {
-    position: absolute;
-    bottom: 0;
-    max-width: 330px;
-    margin-bottom: 0;
-  }
-
-  .main-link__description p {
-    padding-right: 2em;
-  }
-
-
-
   .contats__link {
     margin-top: 1em;
   }
@@ -1069,42 +1286,18 @@ img {
   .contats__link:first-child {
     margin-top: 2em;
   }
-
-
 }
 
 /*============== for tablets 1024px ===========================*/
 @media screen and (min-width: 1024px) {
+  .contacts {
+    padding: 1em 2em;
+  }
 
-}
-
-/*=================== for PC 1280px ===========================*/
-@media screen and (min-width: 1280px) {
-
-}
-
-/*=================== for PC 1360px ===========================*/
-@media screen and (min-width: 1360px) {
-
-}
-
-/*=================== for MAC 1600px ===========================*/
-@media screen and (min-width: 1600px) {
-
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
-/*============== for tablets 768px ===========================*/
-@media screen and (min-width: 768px) {
-
-}
-
-/*============== for tablets 1024px ===========================*/
-@media screen and (min-width: 1024px) {
-
+  .contats__map {
+    left: 2.1em;
+    right: 2.1em;
+  }
 }
 
 /*=================== for PC 1280px ===========================*/
