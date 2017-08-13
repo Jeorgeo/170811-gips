@@ -25,11 +25,13 @@
             <a href="#"><img src="img/logo.png" width="260" height="105"
                alt="Московская проиизводственная компания логотип"></a>
           </div>
-          <div class="top-header__phone">
-            <a href="tel:88001004148"><span></span>8 (800) 100 41 48 <p>звонок бесплатный</p></a>
-          </div>
-          <div class="top-header__mesanger">
-            <a href="tel:88001004148"><span></span>8 (800) 100 41 48 <p>Viber Wapp</p></a>
+          <div class="header-contacts">
+            <div class="top-header__phone">
+              <a href="tel:88001004148"><span></span>8 (800) 100 41 48 <p>звонок бесплатный</p></a>
+            </div>
+            <div class="top-header__mesanger">
+              <a href="tel:88001004148"><span></span>8 (800) 100 41 48 <p>Viber Wapp</p></a>
+            </div>
           </div>
         </div>
       </div>
@@ -50,7 +52,7 @@
     <main>
       <section class="main-advantages">
         <div class="container clearfix">
-          <div class="cols col-12 main-advantages__title">
+          <div class="main-advantages__title">
             <p>Мы не тратимся на дорогой маркетинг, имеем собственное
                производство и предлагаем вам приобрести гипсовые 3D панели
                по самым выгодным ценам по России. <span>Оцените сами</span>
@@ -128,12 +130,12 @@
         <div class="main-catalog__title">
           <h3>Каталог продукции</h3>
         </div>
+        <nav class="main-catalog__categories">
+          <ul>
+            <li><a href="">3D панели</a></li>
+          </ul>
+        </nav>
         <div class="container">
-          <nav class="main-catalog__categories">
-            <ul>
-              <li><a href="">3D панели</a></li>
-            </ul>
-          </nav>
           <article class="main-catalog__box cols col-4">
             <div class="main-catalog__card">
               <img src="pics/catalog_photo_1.jpg" width="240" height="240" alt="Улей">
@@ -201,52 +203,56 @@
           <div class="clearfix">
             <h4 class="title_left">Характеристики 3D панели</h4>
           </div>
-          <div class="cols col-6 main-description__characteristics">
-            <table>
-              <tr>
-                <td>Размеры:</td>
-                <td class="different-text">50х50 см</td>
-              </tr>
-              <tr>
-                <td>Площадь:</td>
-                <td class="different-text">0,25 м <sup>2</sup></td>
-              </tr>
-              <tr>
-                <td>Толщина:</td>
-                <td class="different-text">1,5 см</td>
-              </tr>
-              <tr>
-                <td>Вес:</td>
-                <td class="different-text"> 3кг</td>
-              </tr>
-              <tr>
-                <td>Цена:</td>
-                <td class="different-text">380 рублей за штуку</td>
-              </tr>
-            </table>
+          <div class="cols col-6 box_right">
+            <div class="main-description__characteristics">
+              <table>
+                <tr>
+                  <td>Размеры:</td>
+                  <td class="different-text">50х50 см</td>
+                </tr>
+                <tr>
+                  <td>Площадь:</td>
+                  <td class="different-text">0,25 м <sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td>Толщина:</td>
+                  <td class="different-text">1,5 см</td>
+                </tr>
+                <tr>
+                  <td>Вес:</td>
+                  <td class="different-text"> 3кг</td>
+                </tr>
+                <tr>
+                  <td>Цена:</td>
+                  <td class="different-text">380 рублей за штуку</td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div class="cols col-6 main-description__calculator">
-            <h6>Рассчитайте</h6>
-            <p>стоимость своего заказа</p>
-            <form action="mail.php">
-              <label for="width">
-                <input id="width" type="text" name="width" placeholder="Длина стены в метрах">
-              </label>
-              <label for="height">
-                <input id="height" type="text" name="height" placeholder="Длина стены в метрах">
-              </label>
-              <label for="area">
-                <input id="area" class="area" type="text" name="area" value="" readonly>
-              </label>
-              <label for="price">
-                <input id="price" class="price" type="text" name="price" value="" readonly>
-              </label>
-              <button type="button" name="button">Расчитать</button>
-              <label for="mail">
-                <input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail">
-              </label>
-              <button id="order" type="submit" name="button">Отправить результат вам на почту</button>
-            </form>
+          <div class="cols col-6 box_left">
+            <div class="main-description__calculator">
+              <h6>Рассчитайте</h6>
+              <p>стоимость своего заказа</p>
+              <form action="mail.php">
+                <label for="width">
+                  <input id="width" type="text" name="width" placeholder="Длина стены в метрах">
+                </label>
+                <label for="height">
+                  <input id="height" type="text" name="height" placeholder="Длина стены в метрах">
+                </label>
+                <label for="area">
+                  <input id="area" class="area" type="text" name="area" value="" readonly>
+                </label>
+                <label for="price">
+                  <input id="price" class="price" type="text" name="price" value="" readonly>
+                </label>
+                <button type="button" name="button">Расчитать</button>
+                <label for="mail">
+                  <input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail">
+                </label>
+                <button id="order" type="submit" name="button">Отправить результат вам на почту</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
