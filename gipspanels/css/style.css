@@ -1,24 +1,4 @@
-/*
-Theme Name: gipspanels
-Theme URI: http://hmwebs.ru/
-Author: Yury Shakhouski
-Author URI: http://hmwebs.ru/
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: gipspanels
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-gipspanels is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
-*/
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -346,22 +326,22 @@ img {
 }
 
 .social.social_fb {
-  background: url(img/fb_icon.png) center center no-repeat;
+  background: url(../img/fb_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_vk {
-  background: url(img/vk_icon.png) center center no-repeat;
+  background: url(../img/vk_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_ok {
-  background: url(img/ok_icon.png) center center no-repeat;
+  background: url(../img/ok_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_in {
-  background: url(img/in_icon.png) center center no-repeat;
+  background: url(../img/in_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
@@ -427,12 +407,12 @@ img {
 }
 
 .top-header__phone span {
-  background: url(img/phone_icon.png) center center no-repeat;
+  background: url(../img/phone_icon.png) center center no-repeat;
   background-size: contain;
 }
 
 .top-header__mesanger span {
-  background: url("img/mesanger_icon.png") center center no-repeat;
+  background: url("../img/mesanger_icon.png") center center no-repeat;
   background-size: contain;
 }
 
@@ -440,7 +420,7 @@ img {
   position: relative;
   width: 100%;
   padding: 1em 0;
-  background: url("pics/slider_1s.jpg") center bottom no-repeat;
+  background: url("../pics/slider_1s.jpg") center bottom no-repeat;
 	background-size: cover;
 }
 
@@ -624,18 +604,18 @@ img {
 .border-art_bottom {
   width: 100%;
   height: 2em;
-  background: url('img/bord_art_top.jpg') 0 0 repeat-x;
+  background: url('../img/bord_art_top.jpg') 0 0 repeat-x;
   background-size: contain;
   box-shadow: 0 1px 3px 1px #666666;
 }
 
 .border-art_bottom {
-  background: url('img/bord_art_bottom.jpg') 0 0 repeat-x;
+  background: url('../img/bord_art_bottom.jpg') 0 0 repeat-x;
   background-size: contain;
 }
 
 .main-advantages {
-  background: url('img/bg_advantages_2.png') 0 0 no-repeat;
+  background: url('../img/bg_advantages_2.png') 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -648,7 +628,7 @@ img {
   line-height: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  background: url('img/advantages_title.png') 50% 0 no-repeat;
+  background: url('../img/advantages_title.png') 50% 0 no-repeat;
   background-size: cover;
 }
 
@@ -695,7 +675,7 @@ img {
 .main-catalog {
   width: 100%;
   padding: 0 0 1em 0;
-  background: #999999 url('img/bg_catalog.jpg') 0 0 repeat;
+  background: #999999 url('../img/bg_catalog.jpg') 0 0 repeat;
   background-size: 33.33%;
 }
 
@@ -708,7 +688,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background: url('img/catalog_title.png') 50% 0 no-repeat;
+  background: url('../img/catalog_title.png') 50% 0 no-repeat;
   background-size: cover;
 }
 
@@ -732,7 +712,6 @@ img {
 }
 
 .main-catalog__card {
-  position: relative;
   max-width: 310px;
   margin: 0.7em auto;
   padding: 36px;
@@ -741,30 +720,12 @@ img {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.woocommerce-LoopProduct-link {
-  display: block;
-  padding-bottom: 1em;
-}
-
-.main-catalog__card h2 {
-  margin-bottom: 0;
+.main-catalog__card h5 {
   font-size: 1.4em;
   text-transform: uppercase;
 }
 
-.hit_class {
-  position: absolute;
-  top: -6px;
-  left: -5px;
-  display: block;
-  width: 70px;
-  height: 70px;
-  font-size: 0;
-  background: url('img/hit_top.png') 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.woocommerce a.button {
+.main-catalog__card a {
   display: block;
   width: 100%;
   padding: 0.7em;
@@ -775,13 +736,13 @@ img {
   background-color: #496276;
 }
 
-.woocommerce a.button:hover,
+.main-catalog__card a:hover,
 .main-catalog__download a:hover {
   color: #404040;
   background-color: #e79476;
 }
 
-.woocommerce a.button:active,
+.main-catalog__card a:active,
 .main-catalog__download a:active {
   color: #ffffff;
   background-color: #f6490b;
@@ -914,7 +875,7 @@ img {
 
 .main-description {
   padding-bottom: 1em;
-  background: url('img/bg_descript.jpg') 100% 100% no-repeat;
+  background: url('../img/bg_descript.jpg') 100% 100% no-repeat;
   background-size: contain;
 }
 
@@ -1002,7 +963,7 @@ img {
   z-index: 999;
   margin: 0;
   padding: 1em 0;
-  background: url('img/bg_stone.jpg') 100% 100% no-repeat;
+  background: url('../img/bg_stone.jpg') 100% 100% no-repeat;
   background-size: cover;
   box-shadow: 0 0 5px 3px #666666;
 }
@@ -1283,7 +1244,7 @@ img {
 
 .main-footer {
   padding: 1em 0;
-  background: url('img/bg_contacts.jpg') 50% 50% no-repeat;
+  background: url('../img/bg_contacts.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1354,7 +1315,7 @@ img {
   right: 1.1em;
   z-index: 998;
   height: 140px;
-  background: #fafafa url('img/bg_map.jpg') 50% 50% no-repeat;
+  background: #fafafa url('../img/bg_map.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1405,61 +1366,3 @@ img {
 @media screen and (min-width: 1600px) {
 
 }
-
-/*-------------------------------arrow-up------------------------------------*/
-
-.arrow-up {
-  position: fixed;
-  display: inline-block;
-  vertical-align: top;
-  width: 48px;
-  height: 48px;
-  margin: 0;
-  padding: 0;
-  bottom: 50px;
-  right: 30px;
-  border: 1px solid #919191;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-	z-index: 9999;
-}
-
-.arrow-up span {
-  font-size: 0;
-}
-
-.arrow-up span::before,
-.arrow-up span::after {
-  position: absolute;
-  display: block;
-  top: 20px;
-  width: 20px;
-  height: 3px;
-  background-color: rgba(42, 60, 108, 0.5);
-  content: "";
-}
-
-.arrow-up span::before {
-  left: 7px;
-  transform: rotate(-45deg);
-}
-
-.arrow-up span::after {
-  right: 7px;
-  transform: rotate(45deg);
-}
-
-.arrow-up:hover {
-  cursor: pointer;
-}
-
-.arrow-up:hover {
-  background-color: rgba(42, 60, 108, 1);
-}
-
-.arrow-up:hover span::before,
-.arrow-up:hover span::after {
-  background-color: #ffffff;
-}
-
-/*-------------------------------end of arrow-up------------------------------*/

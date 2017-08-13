@@ -11,22 +11,24 @@
 
 ?>
 
-	</div><!-- #content -->
+	</main><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gipspanels' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gipspanels' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gipspanels' ), 'gipspanels', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+</main>
+<footer class="main-footer">
+	<div class="contacts clearfix">
+		<div class="contacts__title">
+			<h2>Декоративные 3D панели из гипса</h2>
+		</div>
+		<?php dynamic_sidebar( 'contacts-f' ); ?>
+		<?php dynamic_sidebar( 'footer-btn' ); ?>
+		<?php dynamic_sidebar( 'footer-map' ); ?>
+	</div>
+</footer>
+<div id="toTop">
+	<a class="arrow-up" href="#">
+		<span>arrow-up</span>
+	</a>
+</div>
 
 <?php wp_footer(); ?>
 

@@ -20,37 +20,42 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gipspanels' ); ?></a>
+<body>
+	<header class="main-header">
+		<div class="top-header">
+			<span class="top-header__flag">ПРоизводитель № 1 В Росиии</span>
+			<div class="container">
+				<ul class="top-header__social">
+					<?php dynamic_sidebar( 'fb-icon' ); ?>
+					<?php dynamic_sidebar( 'vk-icon' ); ?>
+					<?php dynamic_sidebar( 'ok-icon' ); ?>
+					<?php dynamic_sidebar( 'in-icon' ); ?>
+				</ul>
+				<a class="top-header__title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<h1>Московская проиизводственная компания</h1>
+				</a>
+				<div class="top-header__logo">
+					<?php the_custom_logo(); ?>
+				</div>
+				<div class="header-contacts">
+					<?php dynamic_sidebar( 'top-phone' ); ?>
+					<?php dynamic_sidebar( 'top-mesanger' ); ?>
+				</div>
+			</div>
+		</div>
+		<div class="middle-header">
+			<div class="slider">
+				<div class="container clearfix">
+					<div class="slider__title">
+						<h2>Декоративная 3D плитка из гипса</h2>
+						<p>100% экологически чистый материал</p>
+						<p>Дешевле именитых брендов до 40%</p>
+						<a href="#catalog">перейти в каталог</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="border-art_top"></div>
+	</header>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gipspanels' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	  <main>
