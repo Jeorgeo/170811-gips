@@ -61,7 +61,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");

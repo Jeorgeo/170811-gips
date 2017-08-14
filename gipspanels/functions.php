@@ -227,6 +227,8 @@ function gipspanels_scripts() {
 
 	wp_enqueue_style( 'gipspanels-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'gipspanels-jquery', get_template_directory_uri() . '/js/jquery-3.2.0.min.js', array(), '20170813', true );
+
 	wp_enqueue_script( 'gipspanels-main', get_template_directory_uri() . '/js/main.js', array(), '20170813', true );
 
 	wp_enqueue_script( 'gipspanels-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

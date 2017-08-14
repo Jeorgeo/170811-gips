@@ -16,30 +16,46 @@ if ( ! empty( $woocommerce_loop['columns'] ) )
 if ( is_singular() )
 	$stainedglass_columns = 0;
 ?>
-<section class="main-catalog">
+<div class="border-art_top"></div>
+</header>
 
-<div class="main-wrapper woo-shop full-width flex-layout-<?php echo esc_attr( $stainedglass_columns ); ?>">
+<main class="woocommerce">
+	<section class="main-catalog">
+		<div class="main-wrapper woo-shop full-width flex-layout-<?php echo esc_attr( $stainedglass_columns ); ?>">
 
-	<div class="site-content">
-		<div class="content">
-			<?php if ( is_singular() ) : ?>
-			<div class="content-container">
-			<?php endif; ?>
+			<div class="container">
+				<div class="content">
+					<?php if ( is_singular() ) : ?>
+					<div class="content-container">
+					<?php endif; ?>
 
-					<?php woocommerce_breadcrumb(); ?>
-					<?php woocommerce_content(); ?>
-					<?php do_action( 'stainedglass_after_content' ); ?>
+							<?php woocommerce_breadcrumb(); ?>
+							<nav class="main-catalog__categories">
+								<?php
+									wp_nav_menu( array(
+										'theme_location' => 'menu-1',
+										'menu_id'        => 'primary-menu',
+									) );
+								?>
+							</nav>
+							<?php woocommerce_content(); ?>
+							<?php do_action( 'stainedglass_after_content' ); ?>
 
-			<?php if ( is_singular() ) : ?>
-			</div><!-- .content-container -->
-			<?php endif; ?>
+					<?php if ( is_singular() ) : ?>
+					</div><!-- .content-container -->
+					<?php endif; ?>
 
-		</div><!-- .content -->
-		<div class="clear"></div>
-	</div><!-- .site-content -->
+				</div><!-- .content -->
+				<div class="clear"></div>
+			</div><!-- .site-content -->
 
-</div> <!-- .main-wrapper.woo-shop -->
-</section>
+		</div> <!-- .main-wrapper.woo-shop -->
+
+	</section>
+	<div class="border-art_top"></div>
+</main>
+
+
 
 <?php
 get_footer();

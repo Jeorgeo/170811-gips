@@ -21,6 +21,7 @@
 </head>
 
 <body>
+	<a name="top"></a>
 	<header class="main-header">
 		<div class="top-header">
 			<span class="top-header__flag">ПРоизводитель № 1 В Росиии</span>
@@ -43,19 +44,4 @@
 				</div>
 			</div>
 		</div>
-		<div class="middle-header">
-			<div class="slider">
-				<div class="container clearfix">
-					<div class="slider__title">
-						<h2>Декоративная 3D плитка из гипса</h2>
-						<p>100% экологически чистый материал</p>
-						<p>Дешевле именитых брендов до 40%</p>
-						<a href="#catalog">перейти в каталог</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="border-art_top"></div>
-	</header>
-
-	  <main>
+		

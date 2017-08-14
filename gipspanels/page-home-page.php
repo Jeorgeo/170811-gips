@@ -14,6 +14,20 @@
 
 get_header(); ?>
 
+<div class="middle-header">
+	<div class="slider">
+		<div class="container clearfix">
+			<div class="slider__title">
+				<h2>Декоративная 3D плитка из гипса</h2>
+				<p>100% экологически чистый материал</p>
+				<p>Дешевле именитых брендов до 40%</p>
+				<a href="#catalog">перейти в каталог</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="border-art_top"></div>
+</header>
 <section class="main-advantages">
 	<div class="container clearfix">
 		<div class="main-advantages__title">
