@@ -758,6 +758,15 @@ img {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.main-catalog__categories a:hover {
+  color: #e79476;
+}
+
+.main-catalog__categories .current-menu-item a,
+.main-catalog__categories a:active {
+  color: #f6490b;
+}
+
 .main-catalog__download {
   padding: 1em;
   box-sizing: border-box;
@@ -1138,20 +1147,12 @@ img {
     width: 100%;
   }
 
-  .main-catalog__categories a:hover {
-    color: #e79476;
-  }
-
-  .main-catalog__categories .current_page_item a,
-  .main-catalog__categories .current_page_item a:active {
-    color: #f6490b;
-  }
-
   .main-link__description .col-8 {
     padding-left: 2em;
   }
 
-  .title_right, .title_left {
+  .title_right,
+  .title_left {
     width: 50%;
   }
 }
@@ -1368,6 +1369,12 @@ img {
 }
 
 .added_to_cart {
+  display: none;
+}
+
+.page-title,
+.woocommerce-result-count,
+.woocommerce-ordering {
   display: none;
 }
 

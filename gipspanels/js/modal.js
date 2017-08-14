@@ -61,21 +61,19 @@ for (var i = 0; i < z; i++) {
 
      box_title = i_title[x];
 
-     box_price = i_price[x];
+     /*box_price = i_price[x];*/
 
      if (box_title) {
 
-       console.log(box_title, x);
-
        form_title.value  = box_title.innerText;
 
-       form_price.value = box_price.innerText;
+       /*form_price.value = box_price.innerText;*/
 
      } else {
 
        form_title.value = box_name.innerText;
 
-       form_price.value = box_price.innerText;
+       /*form_price.value = box_price.innerText;*/
 
      };
 
@@ -83,9 +81,7 @@ for (var i = 0; i < z; i++) {
 
      win_popup.classList.add("modal-content-show");
 
-     console.log(form_title.value, form_price.value);}
-
-     else {
+     } else {
 
        return;
 

@@ -133,7 +133,7 @@ get_header(); ?>
 			<h4 class="title_right clearfix">3D панели в интерьере</h4>
 		</div>
 		<div class="main-description__gallery">
-			<?php echo do_shortcode("[metaslider id=29]");?>
+			<?php echo do_shortcode("[metaslider id=8]");?>
 		</div>
 		<div class="clearfix">
 			<h4 class="title_left">Характеристики 3D панели</h4>
