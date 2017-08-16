@@ -21,6 +21,9 @@
 		<?php dynamic_sidebar( 'footer-btn' ); ?>
 		<?php dynamic_sidebar( 'footer-map' ); ?>
 	</div>
+  <!-- Пользвательский код!-->
+  <?php the_field('footer_filds'); ?>
+  <!-- Пользвательский код!-->
 </footer>
 <div class="wrap"></div>
 
@@ -59,6 +62,9 @@
 </div>
 
 <?php wp_footer(); ?>
+<!-- Пользвательский код!-->
+<?php the_field('body_filds'); ?>
+<!-- Пользвательский код!-->
 <script src="<?php bloginfo("template_directory"); ?>/js/modal.js"></script>
 
 </body>

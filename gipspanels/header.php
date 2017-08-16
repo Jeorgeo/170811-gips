@@ -18,6 +18,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+  <!-- Пользвательский код!-->
+  <?php the_field('head_filds'); ?>
+  <!-- Пользвательский код!-->
 </head>
 
 <body>
@@ -44,4 +47,3 @@
 				</div>
 			</div>
 		</div>
-		

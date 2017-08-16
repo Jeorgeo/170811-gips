@@ -32,7 +32,8 @@ function calculateArea() {
     newWidth = valueWidth;
   }
 
-  newArea = newHeight * newWidth;
+
+  newArea = Math.round((newHeight * newWidth), -1);
   newPrice = newArea * PRICE;
 
 if (isNaN(newArea)) {

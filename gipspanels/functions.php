@@ -411,3 +411,70 @@ require get_template_directory() . '/tgm/gipspanels.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Required custom filds.
+ */
+ if(function_exists("register_field_group"))
+ {
+ 	register_field_group(array (
+ 		'id' => 'acf_bloki-dlya-vstavki-vidzhetov',
+ 		'title' => 'блоки для вставки виджетов',
+ 		'fields' => array (
+ 			array (
+ 				'key' => 'field_5994470e9202f',
+ 				'label' => 'head_filds',
+ 				'name' => 'head_filds',
+ 				'type' => 'textarea',
+ 				'instructions' => 'Здесь вставляется код в тег head',
+ 				'default_value' => '',
+ 				'placeholder' => '',
+ 				'maxlength' => '',
+ 				'rows' => 8,
+ 				'formatting' => 'html',
+ 			),
+ 			array (
+ 				'key' => 'field_5994475992030',
+ 				'label' => 'body_filds',
+ 				'name' => 'body_filds',
+ 				'type' => 'textarea',
+ 				'instructions' => 'Здесь вставляется код в перед тегом </body>',
+ 				'default_value' => '',
+ 				'placeholder' => '',
+ 				'maxlength' => '',
+ 				'rows' => 8,
+ 				'formatting' => 'html',
+ 			),
+ 			array (
+ 				'key' => 'field_5994477292031',
+ 				'label' => 'footer_filds',
+ 				'name' => 'footer_filds',
+ 				'type' => 'textarea',
+ 				'instructions' => 'Здесь вставляется код в footer',
+ 				'default_value' => '',
+ 				'placeholder' => '',
+ 				'maxlength' => '',
+ 				'rows' => 8,
+ 				'formatting' => 'html',
+ 			),
+ 		),
+ 		'location' => array (
+ 			array (
+ 				array (
+ 					'param' => 'post_type',
+ 					'operator' => '==',
+ 					'value' => 'page',
+ 					'order_no' => 0,
+ 					'group_no' => 0,
+ 				),
+ 			),
+ 		),
+ 		'options' => array (
+ 			'position' => 'normal',
+ 			'layout' => 'no_box',
+ 			'hide_on_screen' => array (
+ 			),
+ 		),
+ 		'menu_order' => 0,
+ 	));
+ }
