@@ -33,15 +33,20 @@
   <div class="main-catalog-order">
   </div>
 		<form id="js_form2" class="question-form-box clearfix">
-			<input id="indicator-title" type="hidden" name="indicator-title" value="по умолчанию">
-    	<input id="indicator-price" type="hidden" name="indicator-price" value="по умолчанию">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="Сайт" value="Гипсовыепанели.com">
+      <input type="hidden" name="admin_email" value="jeorgeo@list.ru">
+      <input type="hidden" name="Тема" value="Оставить заявку">
+			<input id="indicator-title" type="hidden" name="Название продукта" value="по умолчанию">
+    	<input id="indicator-price" type="hidden" name="цена" value="по умолчанию">
 			<input id="indicator-quantity" type="hidden" name="indicator-quantity" value="по умолчанию">
+      <!-- END Hidden Required Fields -->
     	<label for="name"></label>
-    	<input id="name" type="text" name="name" placeholder="Как к вам обращаться*" required>
+    	<input id="name" type="text" name="Имя" placeholder="Как к вам обращаться*" required>
     	<label for="phone"></label>
-    	<input id="phone" type="text" name="phone" placeholder="Ваш телефон*" required>
+    	<input id="phone" type="text" name="Телефон" placeholder="Ваш телефон*" required>
     	<label for="message"></label>
-    	<textarea id="message" name="message"  value="Ваши пожелания, уточнения">
+    	<textarea id="message" name="Сообщение"  value="Ваши пожелания, уточнения">
     	</textarea>
     	<span>* - Обязательно для заполнения</span>
     	<button class="form-message-btn" type="submit"  name="send" value="отправить">отправить</button>

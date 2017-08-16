@@ -11,6 +11,7 @@ var separator = ',';
 var newDot = '.';
 var PRICE = 380 / 0.25;
 
+
 btnCalculate.addEventListener('click', calculateArea);
 
 function calculateArea() {

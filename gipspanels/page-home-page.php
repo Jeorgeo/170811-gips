@@ -22,6 +22,7 @@ get_header(); ?>
 				<p>100% экологически чистый материал</p>
 				<p>Дешевле именитых брендов до 40%</p>
 				<a href="#catalog">перейти в каталог</a>
+				<a class="js_popup-btn" href="#">Оставить заявку</a>
 			</div>
 		</div>
 	</div>
@@ -133,7 +134,7 @@ get_header(); ?>
 			<h4 class="title_right clearfix">3D панели в интерьере</h4>
 		</div>
 		<div class="main-description__gallery">
-			<?php echo do_shortcode("[metaslider id=8]");?>
+      <?php echo do_shortcode("[metaslider id=96]"); ?>
 		</div>
 		<div class="clearfix">
 			<h4 class="title_left">Характеристики 3D панели</h4>

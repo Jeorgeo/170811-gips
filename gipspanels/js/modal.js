@@ -21,15 +21,30 @@ var form_title = document.getElementById('indicator-title');
 
 var form_price = document.getElementById('indicator-price');
 
+var btnRequest = document.querySelectorAll('.js_popup-btn');
+
 var i = 0;
 
 var x = 0;
 
 var z = link.length;
 
-console.log(link[i]);
+for (var k = 0; k < btnRequest.length; k++) {
 
+  btnRequest[k].addEventListener('click', function(event) {
 
+     event.preventDefault();
+
+     var self = event.target;
+
+     if (self.classList.contains("js_popup-btn")) {
+       popup.classList.add("modal-content-show");
+       win_popup.classList.add("modal-content-show");
+       } else {
+         return;
+     }
+  });
+}
 
 for (var i = 0; i < z; i++) {
 
@@ -38,8 +53,6 @@ for (var i = 0; i < z; i++) {
      event.preventDefault();
 
      var self = event.target;
-
-
 
      if (self.classList.contains("button")) {
 
