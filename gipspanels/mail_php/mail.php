@@ -1,79 +1,37 @@
-<?
-// ----------------------------конфигурация-------------------------- //
-
-header("Content-Type: text/html; charset=utf-8");
-
-$adminemail="jeorgeo@list.ru";  // e-mail админа
+<?php
 
 
-$date=date("d.m.y"); // число.месяц.год
+$project_name = trim($_POST["project_name"]);
+$admin_email  = trim($_POST["admin_email"]);
+$user_email  = trim($_POST["mail"]);
+$form_subject = trim($_POST["form_subject"]);
+$form_width = trim($_POST["width"]);
+$form_height = trim($_POST["height"]);
+$form_area = trim($_POST["area"]);
+$form_price = trim($_POST["price"]);
 
-$time=date("H:i"); // часы:минуты:секунды
+$msg = "
+  <p>Тема письма: $form_subject </p>
+  <p>Адрес отправителя: $project_name </p>
+  <p>Высота стены: $form_height </p>
+  <p>Длина стены: $form_width </p>
+  <p>Площадь м2: $form_area </p>
+  <p>Стоимость рублей: $form_price </p>
+  <p>Емайл заказчика: $user_email </p>
+";
 
-$backurl="https://energoart.ru";  // На какую страничку переходит после отправки письма
-
-//---------------------------------------------------------------------- //
-
-
-
-// Принимаем данные с формы
-
-$name="info@energoart.ru";
-
-$email="info@energoart.ru";
-
-
-
-
-
-// Проверяем валидность e-mail
-
-
-
-
-$msg="
-
-
-<p>Имя:
-
-<p>E-mail:
-
-<p>сообщение:
-
-
+$msg1 = "
+  <p>Тема письма: $form_subject </p>
+  <p>Высота стены: $form_height </p>
+  <p>Длина стены: $form_width </p>
+  <p>Площадь м2: $form_area </p>
+  <p>Стоимость рублей: $form_price </p>
+  <p>С уважением: $project_name </p>
 ";
 
 
-
- // Отправляем письмо админу
-
-mail("$adminemail", "$date $time Сообщение от $name", "$msg");
-
-
-
-// Сохраняем в базу данных
-
-$f = fopen("message.txt", "a+");
-
-fwrite($f," \n $date $time Сообщение от $name");
-
-fwrite($f,"\n $msg ");
-
-fwrite($f,"\n ---------------");
-
-fclose($f);
-
-
-
-// Выводим сообщение пользователю
-
-print "<script language='Javascript'><!--
-function reload() {location = \"$backurl\"}; setTimeout('reload()', 600);
-//--></script>
-
-$msg
-
-<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";
+mail($admin_email, $form_subject, $msg );
+mail($user_email, $form_subject, $msg1 );
 exit;
 
 

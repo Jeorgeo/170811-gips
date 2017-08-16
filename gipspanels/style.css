@@ -40,20 +40,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Fonts
 --------------------------------------------------------------*/
 
-@font-face {
+/*@font-face {
   font-family: 'OpenSans'; /* Гарнитура шрифта */
-  src: url( "fonts/OpenSans-Regular.ttf" ); /* Путь к файлу со шрифтом */
-}
+/*  src: url( "fonts/OpenSans-Regular.ttf" ); /* Путь к файлу со шрифтом */
+/*}
 
 @font-face {
    font-family: 'OpenSansExtraBold'; /* Гарнитура шрифта */
-   src: url( "fonts/OpenSans-ExtraBold.ttf" ); /* Путь к файлу со шрифтом */
-  }
+/*   src: url( "fonts/OpenSans-ExtraBold.ttf" ); /* Путь к файлу со шрифтом */
+/*  }
 
 @font-face {
    font-family: 'OpenSansSemibold'; /* Гарнитура шрифта */
-   src: url( "fonts/OpenSans-Semibold.ttf" ); /* Путь к файлу со шрифтом */
-  }
+/*   src: url( "fonts/OpenSans-Semibold.ttf" ); /* Путь к файлу со шрифтом */
+/*  }
 
 
 /*--------------------------------------------------------------
@@ -602,7 +602,10 @@ img {
   .middle-header {
     position: relative;
     z-index: 10;
-    min-height: 300px;
+    min-height: 400px;
+    background: url("pics/slider_1.jpg") center bottom no-repeat;
+    background-size: auto auto;
+    background-size: cover;
   }
 
   .slider__title {
@@ -617,7 +620,7 @@ img {
 /*=================== for PC 1360px ===========================*/
 @media screen and (min-width: 1360px) {
   .middle-header {
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -635,11 +638,12 @@ img {
 
 .border-art_top,
 .border-art_bottom {
+  position: relative;
   width: 100%;
   height: 2em;
   background: url('img/bord_art_top.jpg') 0 0 repeat-x;
   background-size: contain;
-  box-shadow: 0 1px 3px 1px #666666;
+  box-shadow: 0 1px 3px 3px #444444;
 }
 
 .border-art_bottom {
@@ -648,7 +652,7 @@ img {
 }
 
 .main-advantages {
-  background: url('img/bg_advantages_2.png') 0 0 no-repeat;
+  background: url('img/bg_advantages_2.jpg') 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -713,8 +717,11 @@ img {
 }
 
 .main-catalog__title {
+  width: 90%;
+  max-width: 1186px;
   margin: 0 auto 1em auto;
   padding: 0.5em;
+  box-sizing: border-box;
   font-size: 1.6em;
   font-weight: 200;
   line-height: 1.5em;
@@ -736,7 +743,6 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
 }
 
@@ -746,12 +752,15 @@ img {
   max-width: 300px;
   padding: 0.5em;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .main-catalog__card {
   position: relative;
   max-width: 310px;
-  min-height: 490px;
+  min-height: 500px;
   margin: 0.7em auto;
   padding: 36px;
   box-sizing: border-box;
@@ -907,7 +916,7 @@ img {
 .different-text {
   padding-left: 1em;
   font-size: 1.2em;
-  color: #93766b;
+  color: #ebc0b0;
   text-shadow: 1px 1px #a93b14;
 }
 
@@ -916,14 +925,14 @@ img {
   font-size: 1.8em;
   text-align: center;
   text-transform: uppercase;
-  color: #93766b;
+  color: #ebc0b0;
   text-shadow: 1px 1px #a93b14;
 }
 
 .main-description__calculator p {
   margin: 0 auto 1em auto;
   text-align: center;
-  color: #93766b;
+  color: #ebc0b0;
 }
 
 .main-description__calculator input,
@@ -1053,11 +1062,14 @@ img {
 
   .main-catalog__download p {
     display: block;
-    width: 90%;
+    width: 96%;
     margin: 1em auto;
+    padding: 36px;
+    box-sizing: border-box;
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .main-description .box_right {
@@ -1102,7 +1114,7 @@ img {
 /*============== for tablets 1024px ===========================*/
 @media screen and (min-width: 1024px) {
   .main-advantages__advantage {
-    min-height: 350px;
+    min-height: 370px;
     margin: 0 1em;
   }
 
@@ -1138,10 +1150,11 @@ img {
 
   .main-catalog__categories li {
     max-width: 290px;
+    padding: 1em 2em;
   }
 
   .main-catalog__categories li:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .main-catalog__categories a {
@@ -1178,7 +1191,7 @@ img {
   }
 
   .main-catalog__title {
-    padding: 1em;
+    padding: 1.3em 1em 3.7em 1em;
     font-size: 1.9em;
   }
 
@@ -1240,7 +1253,7 @@ img {
   }
 
   .main-catalog__title {
-    padding: 1.2em;
+    padding: 1.2em 1em 2.5em 1em;
     font-size: 2.2em;
   }
 
@@ -1401,7 +1414,7 @@ img {
 
 .main-footer {
   padding: 1em 0;
-  background: url('img/bg_contacts.jpg') 50% 50% no-repeat;
+  background: url('img/bg_contacts_s.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1421,7 +1434,7 @@ img {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: #93766b;
+  color: #ebc0b0;
   text-shadow: 1px 1px #a93b14;
 }
 
@@ -1438,7 +1451,7 @@ img {
 
 .contats__work a {
   margin: 0.4em 0;
-  color: #ffffff;
+  color: #ebc0b0;
 }
 
 .contats__work a:hover {
@@ -1495,6 +1508,11 @@ img {
 
 /*============== for tablets 1024px ===========================*/
 @media screen and (min-width: 1024px) {
+  .main-footer {
+    background: url('img/bg_contacts.jpg') 50% 50% no-repeat;
+    background-size: cover;
+  }
+
   .contacts {
     padding: 1em 2em;
   }

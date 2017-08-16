@@ -130,8 +130,8 @@ get_header(); ?>
 		<div class="main-catalog__download">
 			<p>С полным ассортиментом продукции, производимой нашей компанией,
 				 Вы можете ознакомиться в нашем каталоге.<br>
-         Срок изготовления панелей представленных на странице составляет от 3 рабочих дней.<br>
-         Срок изготовления панелей из каталога уточняйте по телефону.</p>
+         - Срок изготовления панелей представленных на странице составляет от 3 рабочих дней.<br>
+         - Срок изготовления панелей из каталога уточняйте по телефону.</p>
 			<?php dynamic_sidebar( 'link-download' ); ?>
 		</div>
 	</div>
@@ -185,22 +185,22 @@ get_header(); ?>
 				<form id="js_form">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Гипсовыепанели.com">
-					<input type="hidden" name="admin_email" value="jeorgeo@list.ru">
+					<input type="hidden" name="admin_email" value="<?php the_field('mail_filds'); ?>">
 					<input type="hidden" name="form_subject" value="Рассчет площади и стоимости">
 					<!-- END Hidden Required Fields -->
 					<label for="width">
-						<input id="width" type="text" name="Длина" placeholder="Длина стены в метрах">
+						<input id="width" type="text" name="width" placeholder="Длина стены в метрах">
 					</label>
 					<label for="height">
-						<input id="height" type="text" name="Высота" placeholder="Высота стены в метрах">
+						<input id="height" type="text" name="height" placeholder="Высота стены в метрах">
 					</label>
 					<label id="label-area" class="input-title" for="area">Площадь, м2:</label>
-					<input id="area" class="area" type="text" name="Площадь" value="" readonly>
+					<input id="area" class="area" type="text" name="area" value="неопределено" readonly>
 					<label id="label-price" class="input-title" for="price">Стоимость, рублей:</label>
-					<input id="price" class="price" type="text" name="Стоимость" value="" readonly>
+					<input id="price" class="price" type="text" name="price" value="неопределено" readonly>
 					<button id="calculate" type="button" name="button">Расчитать</button>
 					<label for="mail">
-						<input id="mail" class="mail" type="text" name="e_mail" placeholder="Ваш e-mail" required value="">
+						<input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required value="" pattern="^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 					</label>
 					<button id="order" type="submit" name="button">Отправить результат вам на почту</button>
 				</form>

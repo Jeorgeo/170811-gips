@@ -37,19 +37,19 @@
   </div>
 		<form id="js_form2" class="question-form-box clearfix">
       <!-- Hidden Required Fields -->
-      <input type="hidden" name="Сайт" value="Гипсовыепанели.com">
-      <input type="hidden" name="admin_email" value="jeorgeo@list.ru">
-      <input type="hidden" name="Тема" value="Оставить заявку">
-			<input id="indicator-title" type="hidden" name="Название продукта" value="по умолчанию">
-    	<input id="indicator-price" type="hidden" name="цена" value="по умолчанию">
-			<input id="indicator-quantity" type="hidden" name="indicator-quantity" value="по умолчанию">
+      <input type="hidden" name="project_name" value="Гипсовыепанели.com">
+      <input type="hidden" name="admin_email" value="<?php the_field('mail_filds'); ?>">
+      <input type="hidden" name="form_subject" value="Заявка с формы захвата">
+			<input id="indicator-title" type="hidden" name="name_product" value="неопределено">
+    	<input id="indicator-price" type="hidden" name="price" value="неопределено">
+			<input id="indicator-quantity" type="hidden" name="indicator_quantity" value="неопределено">
       <!-- END Hidden Required Fields -->
     	<label for="name"></label>
-    	<input id="name" type="text" name="Имя" placeholder="Как к вам обращаться*" required>
+    	<input id="name" type="text" name="name" placeholder="Как к вам обращаться*" required pattern="^[A-Za-zА-Яа-яЁё]+$">
     	<label for="phone"></label>
-    	<input id="phone" type="text" name="Телефон" placeholder="Ваш телефон*" required>
+    	<input id="phone" type="text" name="phone" placeholder="Ваш телефон*" required pattern="[0-9]{5,10}">
     	<label for="message"></label>
-    	<textarea id="message" name="Сообщение"  value="Ваши пожелания, уточнения">
+    	<textarea id="message" name="message"  placeholder="Ваши пожелания, уточнения">
     	</textarea>
     	<span>* - Обязательно для заполнения</span>
     	<button class="form-message-btn" type="submit"  name="send" value="отправить">отправить</button>
