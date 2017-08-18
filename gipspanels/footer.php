@@ -45,9 +45,10 @@
 			<input id="indicator-quantity" type="hidden" name="indicator_quantity" value="неопределено">
       <!-- END Hidden Required Fields -->
     	<label for="name"></label>
-    	<input id="name" type="text" name="name" placeholder="Как к вам обращаться*" required pattern="^[A-Za-zА-Яа-яЁё]+$">
+    	<input id="name" type="text" name="name" placeholder="Как к вам обращаться*" pattern="^[A-Za-zА-Яа-яЁё]+$" required>
     	<label for="phone"></label>
-    	<input id="phone" type="text" name="phone" placeholder="Ваш телефон*" required pattern="[0-9]{5,10}">
+    	<input id="phone" type="text" name="phone" placeholder="Ваш телефон*"
+      pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
     	<label for="message"></label>
     	<textarea id="message" name="message"  placeholder="Ваши пожелания, уточнения">
     	</textarea>

@@ -319,7 +319,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #a93b14;
-  box-shadow: 0 4px 3px 2px #666666;
+  box-shadow: 0 2px 3px 1px #333333;
   box-sizing: border-box;
 }
 
@@ -534,7 +534,6 @@ img {
     width: 65%;
     margin: 5% auto 2% auto;
   }
-
 }
 
 /*============== for tablets 1024px ===========================*/
@@ -573,7 +572,6 @@ img {
   .top-header__social {
     margin-top: 1px;
   }
-
 
   .header-contacts {
     position: relative;
@@ -620,7 +618,11 @@ img {
 /*=================== for PC 1360px ===========================*/
 @media screen and (min-width: 1360px) {
   .middle-header {
-    min-height: 500px;
+    min-height: 450px;
+  }
+
+  .middle-header .slider__title {
+    bottom: 10%;
   }
 }
 
@@ -628,6 +630,12 @@ img {
 @media screen and (min-width: 1600px) {
   .middle-header {
     min-height: 600px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .middle-header {
+    min-height: 760px;
   }
 }
 

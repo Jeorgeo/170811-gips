@@ -200,7 +200,8 @@ get_header(); ?>
 					<input id="price" class="price" type="text" name="price" value="неопределено" readonly>
 					<button id="calculate" type="button" name="button">Расчитать</button>
 					<label for="mail">
-						<input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required value="" pattern="^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+						<input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required value=""
+            pattern="^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 					</label>
 					<button id="order" type="submit" name="button">Отправить результат вам на почту</button>
 				</form>

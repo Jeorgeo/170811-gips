@@ -102,7 +102,7 @@ add_action( 'after_setup_theme', 'gipspanels_content_width', 0 );
  */
 function gipspanels_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Социальные иконки.Фейсбук', 'gipspanels' ),
+		'name'          => esc_html__( 'Социальные иконки. Фейсбук', 'gipspanels' ),
 		'id'            => 'fb-icon',
 		'description'   => esc_html__( 'Добавить запись вида: <a href="#" class="social social_fb">фэйсбук</a>', 'gipspanels' ),
 		'before_widget' => '<li>',
@@ -111,7 +111,7 @@ function gipspanels_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Социальные иконки.Вконтакте', 'gipspanels' ),
+		'name'          => esc_html__( 'Социальные иконки. Вконтакте', 'gipspanels' ),
 		'id'            => 'vk-icon',
 		'description'   => esc_html__( 'Добавить запись вида: <a href="#" class="social social_vk">Вконтакте</a>', 'gipspanels' ),
 		'before_widget' => '<li>',
@@ -426,7 +426,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  				'label' => 'head_filds',
  				'name' => 'head_filds',
  				'type' => 'textarea',
- 				'instructions' => 'Здесь вставляется код в тег head',
+ 				'instructions' => 'Здесь вставляется код в head',
  				'default_value' => '',
  				'placeholder' => '',
  				'maxlength' => '',
@@ -438,7 +438,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  				'label' => 'body_filds',
  				'name' => 'body_filds',
  				'type' => 'textarea',
- 				'instructions' => 'Здесь вставляется код в перед тегом </body>',
+ 				'instructions' => 'Здесь вставляется код в перед в body',
  				'default_value' => '',
  				'placeholder' => '',
  				'maxlength' => '',

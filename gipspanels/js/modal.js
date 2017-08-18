@@ -104,15 +104,19 @@ for (var i = 0; i < z; i++) {
 
 }
 
+function removePopup() {
+  popup.classList.remove("modal-content-show");
+
+  win_popup.classList.remove("modal-content-show");
+}
+
 
 
 close.addEventListener("click", function(event) {
 
   event.preventDefault();
 
-  popup.classList.remove("modal-content-show");
-
-  win_popup.classList.remove("modal-content-show");
+  removePopup();
 
 });
 
@@ -124,9 +128,7 @@ window.addEventListener("keydown", function(event) {
 
     if (popup.classList.contains("modal-content-show")) {
 
-      popup.classList.remove("modal-content-show");
-
-      win_popup.classList.remove("modal-content-show");
+      removePopup();
 
     }
 
@@ -140,9 +142,7 @@ win_popup.addEventListener("click", function(event) {
 
   if (win_popup.classList.contains("modal-content-show")) {
 
-    popup.classList.remove("modal-content-show");
-
-    win_popup.classList.remove("modal-content-show");
+    removePopup();
 
   }
 
@@ -159,10 +159,7 @@ $(document).ready(function() {
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
+			removePopup();
 		});
 		return false;
 	});
