@@ -609,7 +609,8 @@ img {
   .slider__title {
     position: absolute;
     bottom: 20%;
-    left: 20%;
+    left: 0;
+    right: 0;
     width: 50%;
     max-width: 560px;
   }
@@ -1170,10 +1171,17 @@ img {
     width: 100%;
   }
 
-  .main-catalog__download a {
+  .main-catalog__download a,
+  .main-catalog__download p {
     display: inline-block;
+    vertical-align: top;
     width: 47%;
     margin: 0 0.5em;
+  }
+
+  .main-catalog__download p.text-center {
+    width: 96%;
+    margin-bottom: 1em;
   }
 
   .main-link__description .col-8 {
@@ -1183,6 +1191,14 @@ img {
   .title_right,
   .title_left {
     width: 50%;
+  }
+
+  .title_right {
+    text-align: right;
+  }
+
+  .title_left {
+    text-align: left;
   }
 }
 
@@ -1209,10 +1225,6 @@ img {
 
   .main-catalog__card {
     margin: 2em auto 0 auto;
-  }
-
-  .main-catalog__download p {
-    display: block;
   }
 
   .main-description h4 {
@@ -1533,21 +1545,24 @@ img {
 
 /*=================== for PC 1280px ===========================*/
 @media screen and (min-width: 1280px) {
-
+  .main-footer {
+    background-size: 125%;
+  }
 }
 
 /*=================== for PC 1360px ===========================*/
 @media screen and (min-width: 1360px) {
   .main-footer {
     background-attachment: fixed;
-    background-size: 100%;
     background-position: 50% 100%;
   }
 }
 
 /*=================== for MAC 1600px ===========================*/
 @media screen and (min-width: 1600px) {
-
+  .main-footer {
+    background-size: 100%;
+  }
 }
 
 /*--------------------------------------------------------------

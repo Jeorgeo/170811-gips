@@ -128,9 +128,10 @@ get_header(); ?>
 		<?php the_post(); ?>
 		<?php the_content(); ?>
 		<div class="main-catalog__download">
-			<p class="text-center"><?php the_field('catalog_text-c'); ?></p>
-      <?php the_field('catalog_text-r'); ?>
-      <?php the_field('catalog_text-l'); ?>
+			<p>С полным ассортиментом продукции, производимой нашей компанией,
+				 Вы можете ознакомиться в нашем каталоге.</p>
+      <p>- Срок изготовления панелей представленных на странице составляет от 3 рабочих дней.<br>
+         - Срок изготовления панелей из каталога, а также стоимость уточняйте у менеджеров компании по телефону.</p>
 			<?php dynamic_sidebar( 'link-download' ); ?>
 		</div>
 	</div>
@@ -172,7 +173,7 @@ get_header(); ?>
 					</tr>
 					<tr>
 						<td>Цена:</td>
-						<td class="different-text"> от 380 рублей за штуку</td>
+						<td class="different-text">380 рублей за штуку</td>
 					</tr>
 				</table>
 			</div>
