@@ -193,7 +193,7 @@ get_header(); ?>
 					<label for="height">
 						<input id="height" type="text" name="height" placeholder="Высота стены в метрах">
 					</label>
-					<label id="label-area" class="input-title" for="area">Площадь, м2:</label>
+					<label id="label-area" class="input-title" for="area">Количество штук:</label>
 					<input id="area" class="area" type="text" name="area" value="неопределено" readonly>
 					<label id="label-price" class="input-title" for="price">Стоимость, рублей:</label>
 					<input id="price" class="price" type="text" name="price" value="неопределено" readonly>

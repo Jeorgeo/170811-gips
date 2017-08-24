@@ -147,7 +147,7 @@ win_popup.addEventListener("click", function(event) {
   }
 
 });
-
+/*
 $(document).ready(function() {
 
 	//E-mail Ajax Send
@@ -155,7 +155,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail1.php", //Change
+			url: "https://forms.amocrm.ru/queue/add", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
@@ -164,4 +164,4 @@ $(document).ready(function() {
 		return false;
 	});
 
-});
+});*/

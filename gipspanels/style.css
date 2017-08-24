@@ -1366,6 +1366,10 @@ img {
   background-color: #496276;
 }
 
+.price {
+  font-size: 1.3em;
+}
+
 .woocommerce a.button:hover,
 .main-catalog__download a:hover {
   color: #ffffff;
@@ -1497,6 +1501,34 @@ img {
   color: #ffffff;
   background-color: #93766b;
 }
+
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  position: absolute;
+  display: block;
+  margin-top: -80px;
+  margin-left: -20px;
+  padding: 0.2em 0.5em;;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  content: attr(data-tooltip);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover .tooltip::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .contats__map {
   position: absolute;

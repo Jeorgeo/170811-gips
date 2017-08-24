@@ -9,7 +9,7 @@ var btnCalculate = document.getElementById('calculate');
 var btnSubmit = document.getElementById('order');
 var separator = ',';
 var newDot = '.';
-var PRICE = 380 / 0.25;
+var PRICE = 380;
 
 
 btnCalculate.addEventListener('click', calculateArea);
@@ -33,7 +33,7 @@ function calculateArea() {
   }
 
 
-  newArea = Math.round((newHeight * newWidth), -1);
+  newArea = Math.round((newHeight * newWidth * 4));
   newPrice = newArea * PRICE;
 
 if (isNaN(newArea)) {
