@@ -1,7 +1,7 @@
 <?php
 
 
-$form_subject = trim($_POST["form_subject"]);
+$form_subject = trim($_POST["position"]);
 $project_name = trim($_POST["project_name"]);
 $admin_email  = trim($_POST["admin_email"]);
 $name_product  = trim($_POST["name_product"]);
@@ -11,10 +11,10 @@ $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);
 $message = trim($_POST["message"]);
 
-$msg = "
+$msg1 = "
   <p>Тема письма: $form_subject </p>
   <p>Адрес отправителя: $project_name </p>
-  <p>Название продукта: $form_height </p>
+  <p>Название продукта: $name_product </p>
   <p>Стоимость: $price </p>
   <p>Количество: $indicator_quantity </p>
   <p>Имя заказчика: $name </p>
@@ -23,7 +23,7 @@ $msg = "
 ";
 
 
-mail($admin_email, $form_subject, $msg );
+mail($admin_email, $form_subject, $msg1 );
 exit;
 
 

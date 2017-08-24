@@ -185,7 +185,7 @@ get_header(); ?>
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Гипсовыепанели.com">
 					<input type="hidden" name="admin_email" value="<?php the_field('mail_filds'); ?>">
-					<input type="hidden" name="form_subject" value="Рассчет площади и стоимости">
+					<input type="hidden" name="position" value="Гипсовыепанели. Рассчет стоимости">
 					<!-- END Hidden Required Fields -->
 					<label for="width">
 						<input id="width" type="text" name="width" placeholder="Длина стены в метрах">
@@ -199,8 +199,12 @@ get_header(); ?>
 					<input id="price" class="price" type="text" name="price" value="неопределено" readonly>
 					<button id="calculate" type="button" name="button">Узнать стоимость заказа</button>
 					<label for="mail">
-						<input id="mail" class="mail" type="text" name="mail" placeholder="Ваш e-mail" required value=""
-            pattern="^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+						<input id="mail" class="mail" type="text" name="email" placeholder="Ваш e-mail" required value=""
+            pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
+					</label>
+					<label for="name">
+						<input id="name1" class="name" type="text" name="name" placeholder="Вашe имя" required value=""
+          pattern="^[A-Za-zА-Яа-яЁё]+$">
 					</label>
 					<button id="order" type="submit" name="button">Отправить результат вам на почту</button>
 				</form>

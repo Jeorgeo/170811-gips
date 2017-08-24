@@ -7,9 +7,9 @@ var link = document.querySelectorAll(".button");
 
 var i_name = document.getElementsByTagName("h2");
 
-var i_title = document.querySelectorAll(".product_title ");
+var i_title = document.querySelectorAll("h2.woocommerce-loop-product__title");
 
-var i_price = document.querySelectorAll(".price");
+var i_price = document.querySelectorAll(".woocommerce-Price-amount");
 
 var popup = document.querySelector(".popup-question");
 
@@ -74,19 +74,23 @@ for (var i = 0; i < z; i++) {
 
      box_title = i_title[x];
 
-     /*box_price = i_price[x];*/
+     box_price = i_price[x];
 
      if (box_title) {
 
        form_title.value  = box_title.innerText;
 
-       /*form_price.value = box_price.innerText;*/
+       if (box_price) {
+         form_price.value = box_price.innerText;
+       };
 
      } else {
 
        form_title.value = box_name.innerText;
 
-       /*form_price.value = box_price.innerText;*/
+       if (box_price.value) {
+         form_price.value = box_price.innerText;
+       };
 
      };
 
@@ -147,7 +151,7 @@ win_popup.addEventListener("click", function(event) {
   }
 
 });
-/*
+
 $(document).ready(function() {
 
 	//E-mail Ajax Send
@@ -155,7 +159,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "https://forms.amocrm.ru/queue/add", //Change
+			url: "amocrm/handler1.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
@@ -164,4 +168,4 @@ $(document).ready(function() {
 		return false;
 	});
 
-});*/
+});

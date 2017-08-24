@@ -39,10 +39,10 @@
       <!-- Hidden Required Fields -->
       <input type="hidden" name="project_name" value="Гипсовыепанели.com">
       <input type="hidden" name="admin_email" value="<?php the_field('mail_filds'); ?>">
-      <input type="hidden" name="form_subject" value="Заявка с формы захвата">
-			<input id="indicator-title" type="hidden" name="name_product" value="неопределено">
-    	<input id="indicator-price" type="hidden" name="price" value="неопределено">
-			<input id="indicator-quantity" type="hidden" name="indicator_quantity" value="неопределено">
+      <input type="hidden" name="position" value="Гипсовыепанели. форма захвата">
+			<input id="indicator-title" type="hidden" name="name_product" value="">
+    	<input id="indicator-price" type="hidden" name="price" value="">
+			<input id="indicator-quantity" type="hidden" name="indicator_quantity" value="">
       <!-- END Hidden Required Fields -->
     	<label for="name"></label>
     	<input id="name" type="text" name="name" placeholder="Как к вам обращаться*" pattern="^[A-Za-zА-Яа-яЁё]+$" required>

@@ -988,7 +988,8 @@ img {
 #area,
 #price,
 #mail,
-#order {
+#order,
+#name1 {
   display: none;
 }
 
@@ -1291,7 +1292,8 @@ img {
 #area.show-block,
 #price.show-block,
 #mail.show-block,
-#order.show-block {
+#order.show-block,
+#name1.show-block {
   display: inline-block;
 }
 

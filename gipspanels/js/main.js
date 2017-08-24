@@ -3,6 +3,7 @@ var inputWidth = document.getElementById('width');
 var inputArea = document.getElementById('area');
 var inputPrice = document.getElementById('price');
 var inputMail = document.getElementById('mail');
+var inputName = document.getElementById('name1');
 var labelArea = document.getElementById('label-area');
 var labelPrice = document.getElementById('label-price');
 var btnCalculate = document.getElementById('calculate');
@@ -47,6 +48,7 @@ if (isNaN(newArea)) {
   inputArea.classList.add('show-block');
   inputPrice.classList.add('show-block');
   inputMail.classList.add('show-block');
+  inputName.classList.add('show-block');
   labelArea.classList.add('show-block');
   labelPrice.classList.add('show-block');
   btnCalculate.classList.add('show-block');
@@ -60,7 +62,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "amocrm/handler.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
