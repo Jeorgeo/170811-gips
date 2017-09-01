@@ -73,7 +73,7 @@ if(!empty($data['scope']))
 
 	$contact['custom_fields'][]=$scope;
 }
-$set['request']['leads']['add'][]=$contact;
+$set['request']['contacts']['add'][]=$contact;
 
 #Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/contacts/set';
@@ -100,7 +100,7 @@ CheckCurlResponse($code);
  * нам придётся перевести ответ в формат, понятный PHP
  */
 $Response=json_decode($out,true);
-$Response=$Response['response']['leads']['add'];
+$Response=$Response['response']['contacts']['add'];
 
 $output='ID добавленных контактов:'.PHP_EOL;
 foreach($Response as $v)
