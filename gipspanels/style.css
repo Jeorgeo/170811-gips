@@ -351,7 +351,7 @@ img {
 }
 
 .top-header__social .social:hover {
-  background-color: #93766b;
+  background-color: #a48b63;
 }
 
 .top-header__social .social:active {
@@ -359,22 +359,22 @@ img {
 }
 
 .social.social_fb {
-  background: #a48b63 url(img/fb_icon.png) center center no-repeat;
+  background: #f2d5a8 url(img/fb_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_vk {
-  background: #a48b63 url(img/vk_icon.png) center center no-repeat;
+  background: #f2d5a8 url(img/vk_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_ok {
-  background: #a48b63 url(img/ok_icon.png) center center no-repeat;
+  background: #f2d5a8 url(img/ok_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
 .social.social_in {
-  background: #a48b63 url(img/in_icon.png) center center no-repeat;
+  background: #f2d5a8 url(img/in_icon.png) center center no-repeat;
 	background-size: 80%;
 }
 
@@ -725,6 +725,12 @@ img {
   background-size: 33.33%;
 }
 
+.main-catalog .container {
+  padding: 0.3em;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .main-catalog__title {
   width: 90%;
   max-width: 1186px;
@@ -836,6 +842,25 @@ img {
 
 .main-description__gallery {
   margin: 0.5em 0 0 0;
+}
+
+.main-catalog__download {
+  float: left;
+  width: 100%;
+  margin: 1em auto;
+  color: #ffffff;
+}
+
+.main-catalog__download p {
+  display: block;
+  width: 96%;
+  margin: 1em auto;
+  padding: 36px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .gallery-box img {
@@ -1055,31 +1080,6 @@ img {
   .main-catalog__title {
     margin: 0 auto 1em auto;
     padding-bottom: 1.5em;
-  }
-
-  .main-catalog .container {
-    padding: 0.3em;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .main-catalog__download {
-    float: left;
-    width: 100%;
-    margin: 1em auto;
-    color: #ffffff;
-  }
-
-  .main-catalog__download p {
-    display: block;
-    width: 96%;
-    margin: 1em auto;
-    padding: 36px;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .main-description .box_right {
