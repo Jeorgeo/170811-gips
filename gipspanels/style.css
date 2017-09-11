@@ -1428,6 +1428,10 @@ img {
   display: none;
 }
 
+.woocommerce span.onsale {
+  background-color: #a93b14;
+}
+
 @media screen and (min-width: 768px) {
   .main-catalog__box {
     margin-bottom: 2em;
@@ -1534,7 +1538,7 @@ a:hover .tooltip::after {
 
 .contats__map {
   position: absolute;
-  bottom: -116px;
+  bottom: -140px;
   left: 1.1em;
   right: 1.1em;
   z-index: 998;
