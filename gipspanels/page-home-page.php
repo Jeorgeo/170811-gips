@@ -152,27 +152,27 @@ get_header(); ?>
 				<table>
 					<tr>
 						<td>Размеры:</td>
-						<td class="different-text">50х50 см</td>
+						<td class="different-text"><?php the_field('razmer'); ?></td>
 					</tr>
 					<tr>
 						<td>Площадь:</td>
-						<td class="different-text">0,25 м <sup>2</sup></td>
+						<td class="different-text"><?php the_field('ploschad'); ?> <sup>2</sup></td>
 					</tr>
 					<tr>
 						<td>Толщина:</td>
-						<td class="different-text">от 1 до 1,5 см</td>
+						<td class="different-text"><?php the_field('tolschina'); ?></td>
 					</tr>
 					<tr>
 						<td>Вес:</td>
-						<td class="different-text"> от 2,5 до 3 кг</td>
+						<td class="different-text"><?php the_field('ves'); ?></td>
 					</tr>
           <tr>
 						<td>Прочность:</td>
-						<td class="different-text"> в 5 раз выше аналогов</td>
+						<td class="different-text"><?php the_field('procnnost'); ?></td>
 					</tr>
 					<tr>
 						<td>Цена:</td>
-						<td class="different-text"> от 380 рублей за штуку</td>
+						<td class="different-text"><?php the_field('cena'); ?></td>
 					</tr>
 				</table>
 			</div>

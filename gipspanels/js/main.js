@@ -10,7 +10,7 @@ var btnCalculate = document.getElementById('calculate');
 var btnSubmit = document.getElementById('order');
 var separator = ',';
 var newDot = '.';
-var PRICE = 380;
+var PRICE = 490;
 
 
 btnCalculate.addEventListener('click', calculateArea);
